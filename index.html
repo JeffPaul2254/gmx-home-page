@@ -4,150 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GyanMatrix</title>
-    <style>
-header {
- padding: 0px 32px;
-}
-body {
-    margin: 30px;
-}
-div {
-    margin: auto;
-}
-nav {
- display: flex;
- align-items: center;
- padding: auto;
-}
-.logo{
- width: 200px;
- height: 40px;
- cursor: pointer;
-}
-nav ul{
- flex: 1;
- text-align: right;
-}
-nav ul li{
- display: inline-block;
- list-style: none;
- margin:  0 20px;
-}
-nav ul li a {
- text-decoration: solid;
- color: black;
-}
-.contact-us {
-  background: fixed;
-  background-color: coral;
-  padding: 17px 40px;
-align-self: auto;
- }
-.dropbtn {
-  background-color:white;
-  color: white;
-  padding: 16px;
-  font-size: 20px;
-  border: none;
-  color: black;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-left: 30px;
-  font-weight: bold;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 260px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown:hover .dropbtn {
-    background-color:white;
-}
-button{
-    margin-left: 30px;
-    font-size: 20px;
-    border-radius: 20px;
-}
-.spacing {
-    margin-left: 30px;
-    font-weight: none;
-}
-h1 {
-    text-align: left;
-    font-size: 40px;
-}
-h2 {
-    text-align: center;
-    font-size: 20px;
-}
-.container {
- display: grid;
- align-items: center; 
- grid-template-columns: 1fr 1fr;
- column-gap: 35px;
-}
-.container1 {
- display: grid;
- align-items: center; 
- grid-template-columns: 1fr 1fr 1fr;
- column-gap: 35px;
-}
-img {
-  max-width: 500%;
-  max-height:500%;
-}
-.text {
-  font-size: 20px;
-  text-align: center;
-}
-a {
-  text-decoration: none;
-  font-style: normal;
-  font-size: 20px;
-}
-p {
-    font-size: 25px;
-}
-.myH1 {
-    text-align: center;
-    font-size: 50px;
-}
-.myH2 {
-    text-align: center;
-    font-size: 30px;
-}
-h3 {
-    text-align: center;
-    font-size: 30px;
-}
-h4 {
-    text-align: center;
-    font-size: 20px;
-}
-.image1 {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-    </style>
+    <link rel="stylesheet"  href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -190,6 +48,25 @@ h4 {
     </nav>
     </header>
 
+    <div class="w3-display-container" style="width:100vw; height:100vh">
+  <img class="mySlides" src="slider1.jpg">
+  <img class="mySlides" src="slider2.jpg">
+  <img class="mySlides" src="slider3.jpg">
+  <img class="mySlides" src="slider4.jpg">
+  <img class="mySlides" src="slider5.jpg">
+  <div class="w3-display-bottommiddle w3-center w3-section w3-large w3-text-white" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="position:absolute;left:16px;">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)" style="position:absolute;right:16px;">&#10095;</div>
+    <div style="display:inline-block">
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+    </div>
+  </div>
+</div>
+
     <div class="container">
       <div class="image">
         <img src="img1.jpg">
@@ -231,13 +108,48 @@ h4 {
         <p>As a well-known provider of software development services, we are aware of the significance of maintaining an edge over competitors. Our commitment work has established us as a reputable provider of app development services, catering to companies of all sizes.</p>
         <br>
         <ul>
-            <li><a href="">Custom Software Devolopment Solutions</a></li><br>
-            <li><a href="">Custom Application Devolopment</a></li><br>
-            <li><a href="">Front-End and Back-End devolopment</a></li><br>
-            <li><a href="">API Devolopment</a></li><br>
-            <li><a href="">Mobile App Devolopment</a></li><br>
-            <li><a href="">Web Devolopment</a></li><br>
-            <li><a href="">Software Designs</a></li><br>
+            <div class="qa-container" id="faqItem">
+            <div class="question" onclick="toggleAnswer(this)">Custom software development solutions
+            <span class="toggle-icon"></span>
+            </div>
+            <div class="answer">A wide range of services are included in our custom software solutions, all of which are catered to your unique needs.
+            </div> </div>
+            <div class="qa-container" id="faqItem">
+            <div class="question" onclick="toggleAnswer(this)">Custom Application Devolopment
+            <span class="toggle-icon"></span>
+            </div>
+            <div class="answer">We are experts in custom application development where we design customised software tailor made according to your need. We also offer unique functionality which offers users to perform tasks in a highly specialised manner. The maintenance and support we offer is unmatched making you worry free so that you can get more work done in less time. The scalability and integration is an added advantage which we bring to the table.
+            </div></div>
+            <div class="qa-container" id="faqItem">
+            <div class="question" onclick="toggleAnswer(this)">Front-End and Back-End devolopment
+            <span class="toggle-icon"></span>
+            </div>
+            <div class="answer">Both front-end and back-end development are essential components of modern web and software applications, and they work together to deliver a seamless and efficient user experience. Collaboration between front-end and back-end developers is crucial to building successful applications. With carefully designed front-end interfaces and strong back-end functionality, we guarantee a seamless user experience.
+            </div></div>
+            <div class="qa-container" id="faqItem">
+            <div class="question" onclick="toggleAnswer(this)">API Devolopment
+            <span class="toggle-icon"></span>
+            </div>
+            <div class="answer">API (Application Programming Interface) development involves creating a set of rules and protocols that allow different software applications or components to communicate and interact with each other. APIs act as intermediaries, enabling the exchange of data and functionality between various systems. With our expertise in API development, you can connect and integrate your system with ease.
+            </div></div>
+            <div class="qa-container" id="faqItem">
+            <div class="question" onclick="toggleAnswer(this)">Mobile App Devolopment
+            <span class="toggle-icon"></span>
+            </div>
+            <div class="answer">Mobile app development is the process of creating software applications specifically designed to run on mobile devices, such as smartphones and tablets. Mobile apps are developed for various platforms, including iOS (Apple devices) and Android (Google devices). Additionally, staying up-to-date with the latest mobile technologies and trends is essential for long-term success in the app market. With our interesting mobile apps, you can reach your audience wherever they are.
+            </div></div>
+            <div class="qa-container" id="faqItem">
+            <div class="question" onclick="toggleAnswer(this)">Web Devolopment
+            <span class="toggle-icon"></span>
+            </div>
+            <div class="answer">Web development is a collaborative process that often involves various professionals, including web designers, front-end developers, back-end developers, database administrators, and testers. Successful web development requires ongoing maintenance, updates, and a commitment to staying current with evolving web technologies and best practices. To enthral your online audience, you can also create aesthetically pleasing and highly functional websites with our help.
+            </div></div>
+            <div class="qa-container" id="faqItem">
+            <div class="question" onclick="toggleAnswer(this)">Software Designs
+            <span class="toggle-icon"></span>
+            </div>
+            <div class="answer">Software design is a crucial phase in the software development process, where the overall architecture, structure, and functionality of a software application are planned and defined. Effective software design ensures that the final product is well-organised, maintainable, and meets the intended requirements. We take great care to make sure your software not only works flawlessly but also looks beautiful.
+            </div></div>
         </ul>
         </div>
     </div>
@@ -271,31 +183,32 @@ h4 {
     <h1 class="myH2">Our Leadership Team</h1>
     <h2>Each member of our team is a specialist in his or her field. Together, we make sure you’re investing where <br> the best returns are while building loyalty across every touchpoint.</h2> <br>
     <div class="container1">
-        <div class="image">
-            <img src="leader1.jpg" alt="">
-            <h3>Sam Neff</h3>
-            <h4>Board of Director</h4>
-            <br>
-            <img src="leader2.jpg" alt="">
-            <h3>Vasanth Govind</h3>
-            <h4>Co-Founder & Director of Products</h4>
-        </div> 
-        <div class="image">
-            <img src="leader3.jpg" alt="">
-            <h3>Rajan Parasuraman</h3>
-            <h4>Co-Founder & CEO</h4>
-            <br>
-            <img src="leader4.jpg" alt="">
-            <h3>Jasintha Anantharaman</h3>
-            <h4>Head – Business Development</h4>
-        </div> 
-        <div class="image">
-            <img src="leader5.jpg" alt="">
-            <h3>Vinoth Vanaraj</h3>
-            <h4>Co-Founder & Director Finance</h4>
-            <br>
-        </div>
+    <div class="image">
+        <img src="leader1.jpg" alt="">
+        <h3>Sam Neff</h3>
+        <h4>Board of Director</h4>
     </div>
+    <div class="image">
+        <img src="leader3.jpg" alt="">
+        <h3>Rajan Parasuraman</h3>
+        <h4>Co-Founder & CEO</h4>
+    </div>
+    <div class="image">
+        <img src="leader5.jpg" alt="">
+        <h3>Vinoth Vanaraj</h3>
+        <h4>Co-Founder & Director Finance</h4>
+    </div>
+    <div class="image">
+        <img src="leader2.jpg" alt="">
+        <h3>Vasanth Govind</h3>
+        <h4>Co-Founder & Director of Products</h4>
+    </div>
+    <div class="image">
+        <img src="leader4.jpg" alt="">
+        <h3>Jasintha Anantharaman</h3>
+        <h4>Head – Business Development</h4>
+    </div>
+  </div>
     <br><br>
     <div class="container">
         <div class="text">
@@ -304,7 +217,7 @@ h4 {
         <br>
         <button type="button" class="contact-us">Let's Talk</button>
         </div>
-        <div class="image1">
+        <div class="image">
         <img src="img6.jpg">
         </div>
     </div>
@@ -313,22 +226,133 @@ h4 {
         <div class="text">
         <h1>We Build Relationships</h1><br>
         <p>Total transparency, uncompromised quality, and a people-first approach have helped GyanMatrix become the first choice of our partners.</p>
-        <br>
+        </div>
+        <div class="text">
         <h1>Optimised Processes</h1><br>
         <p>Our standardized way of working with more than 100+ highly qualified engineers has helped us to be more efficient with respect to every penny spent.</p>
         </div>
         <div class="text">
         <h1>Expert Technical Talents</h1><br>
         <p>With over 100+ top software engineers and tech consultants available with us, with advanced technical knowledge and industry experience.</p>
-        <br>
+        </div>
+        <div class="text">
         <h1>20+ Years of Experience</h1><br>
         <p>We have a proven track record of providing software solutions to Social Media, E-Commerce, Education Giants, Media Giants, and various other domains that range from Fortune 500 to the most successful startups.</p>
-        <br>
+        </div>
+        <div class="text">
         <h1>Affordable Yet Premium</h1><br>
         <p>We are well known for our uncompromised premium service with a 100% customer satisfaction rate at a very competitive and affordable cost.</p>
+        </div>
     </div>
     </div>
 
+<div class="slider-wrapper">
+    <ul class="orbit-container">
+      <li class="orbit-slide is-active">
+        <img src="slider21.jpg" alt="Mahesh Ram">
+        <div>
+          <p class="testimonial-slide-quotation">“GyanMatrix is a rare breed of partner – combining technical excellence with a curious and collaborative team, strong leadership, and a passion for innovation. Solvvy and GyanMatrix have built an enduring and powerful partnership that benefits our clients worldwide.”</p>
+          <p class="testimonial-slide-author-info">Mahesh Ram,<br><i class="subheader">CEO - Solvvy</i></p>
+        </div>
+      </li>
 
+      <li class="orbit-slide">
+        <img src="slider22.jpg" alt="Sasha Peterson">
+        <div>
+          <p class="testimonial-slide-quotation">“We have been very pleased with how things have been going, especially in the last quarter... Nestor spoke very warmly about your team and how flexible you all have been in making this work.”</p>
+          <p class="testimonial-slide-author-info">Sasha Peterson,<br><i class="subheader">CEO - TargetX</i></p>
+        </div>
+      </li>
+
+      <li class="orbit-slide">
+        <img src="slider23.jpg" alt="Mike Duca">
+        <div>
+          <p class="testimonial-slide-quotation">“The attitude of the GyanMatrix team definitely surpasses my old team... I can tell that GyanMatrix grows a culture of learning and self-reflection and/or has a great ability to hire people with that kind of mentality.”</p>
+          <p class="testimonial-slide-author-info">Mike Duca,<br><i class="subheader">CEO - NeonMob</i></p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="dots">
+      <span class="dot active" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+    </div>
+  </div>
+
+  <h1 class="myH11">Frequently Asked Questions:</h1>
+
+  <div class="qa-container" id="faqItem">
+    <div class="question" onclick="toggleAnswer(this)">
+      What Are The Current Trends In Custom Software Development For Commercial Purposes?
+      <span class="toggle-icon"></span>
+    </div>
+    <div class="answer">
+      The creation of cloud–native applications, the emphasis on cybersecurity precautions, the use of low–code or no–code platforms for quick development, and a focus on user–centric design for improved user experience are current trends in custom software development for commercial purposes.
+    </div>
+  </div>
+  <div class="qa-container" id="faqItem">
+    <div class="question" onclick="toggleAnswer(this)">
+      How can custom software development benefit your business?
+      <span class="toggle-icon"></span>
+    </div>
+    <div class="answer">
+      Businesses have the advantage of customised solutions that perfectly match their needs thanks to custom software development. In this market with a competitive edge, this leads to increased operational effectiveness, cost savings, and customer engagement.
+    </div>
+  </div>
+  <div class="qa-container" id="faqItem">
+    <div class="question" onclick="toggleAnswer(this)">
+      What is the purpose of a software development company?
+      <span class="toggle-icon"></span>
+    </div>
+    <div class="answer">
+      A software development company like GyanMatrix’s main goal is to create and maintain software solutions that are specifically tailored to meet the needs of businesses. These solutions, which help businesses improve efficiency, productivity, and customer care, can range from web and mobile applications to sophisticated software systems.
+    </div>
+  </div>
+
+  <h1 class="myH11">Digital Resources</h1>
+  <h2>Press Releases, Corporate Updates, GyanTalk & Recognition</h2>
+
+        <div class="container1">
+        <div class="text">
+        <h1 class="myH2"><b>Top Digital Transformation Companies: Pioneering Innovation in the Modern Business Era</b></h1><br>
+        <p class="myp">In an era where technology underpins every facet of business, digital transformation is no longer ...</p>
+        </div>
+
+        <div class="text">
+          <img  src="dr2.jpg" alt="">
+        <h1 class="myH2"><b>7 Strategic Reasons Why GCC India Is the Silent Engine Behind Tech Giants’ Growth</b></h1><br>
+        <p class="myp">Global Capability Centers in India have quietly transformed into innovation powerhouses, playing a pivotal ...</p>
+        </div>
+
+        <div class="text">
+          <img src="dr3.jpg" alt="">
+        <h1 class="myH2"><b>Global Capability Center India: Strategic Growth Engine for Global Enterprises</b></h1><br>
+        <p class="myp">Executive Summary Global Capability Center India is evolving far beyond traditional offshore service models into ...</p>
+        </div>
+      </div>
+
+      <div class="button-container">
+      <button type="button" class="contact-us">View All Resources</button>
+      </div>
+      <br><br><br>
+
+      
+      <div class="container2">
+        <h1 class="myH1">It’s time to create something extraordinary.</h1><br><br>
+        <div class="button-container">
+        <button type="button" class="get-in-touch">Get In Touch</button>
+      </div><br><br>
+      <div class="container">
+        <div class="text"><p>we@gyanmatrix.com</p></div>
+        <div class="text"><p>Call us (+91) 91393 93333</p></div>
+      </div>
+      </div>
+      <br><br>
+
+      <h1 class="myH1">Our Services</h1>
+
+
+      <script src="index.js"></script>
 </body>
 </html>
