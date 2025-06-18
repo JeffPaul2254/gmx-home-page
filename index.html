@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GyanMatrix</title>
+    <style>
+header {
+ padding: 0px 32px;
+}
+body {
+    margin: 30px;
+}
+div {
+    margin: auto;
+}
+nav {
+ display: flex;
+ align-items: center;
+ padding: auto;
+}
+.logo{
+ width: 200px;
+ height: 40px;
+ cursor: pointer;
+}
+nav ul{
+ flex: 1;
+ text-align: right;
+}
+nav ul li{
+ display: inline-block;
+ list-style: none;
+ margin:  0 20px;
+}
+nav ul li a {
+ text-decoration: solid;
+ color: black;
+}
+.contact-us {
+  background: fixed;
+  background-color: coral;
+  padding: 17px 40px;
+align-self: auto;
+ }
+.dropbtn {
+  background-color:white;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  color: black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  font-weight: bold;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color:white;
+}
+button{
+    margin-left: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.spacing {
+    margin-left: 30px;
+    font-weight: none;
+}
+h1 {
+    text-align: left;
+    font-size: 40px;
+}
+h2 {
+    text-align: center;
+    font-size: 20px;
+}
+.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr;
+ column-gap: 35px;
+}
+.container1 {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 35px;
+}
+img {
+  max-width: 500%;
+  max-height:500%;
+}
+.text {
+  font-size: 20px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 20px;
+}
+p {
+    font-size: 25px;
+}
+.myH1 {
+    text-align: center;
+    font-size: 50px;
+}
+.myH2 {
+    text-align: center;
+    font-size: 30px;
+}
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+h4 {
+    text-align: center;
+    font-size: 20px;
+}
+.image1 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <img src="logo.jpg" alt="GyanMatrix" class="logo">
+        <ul>
+            <li><a href="" class="spacing">About Us</a></li>
+            <li><a href="" class="spacing">Why Us</a></li>
+            <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                 <a href="#">Full Stack Devolopment</a>
+                 <a href="#">SalesForce App Devolopment</a>
+                 <a href="#">Website Devolopment Company in Bangalore</a>
+                 <a href="#">Saas Devolopment Company in India</a>
+                 <a href="#">Mobile App Devolopment</a>
+                 <a href="#">SalesForce Mobile App Devolopment</a>
+                 <a href="#">SalesForce Devolopment</a>
+                 <a href="#">Data Engineering</a>
+                 <a href="#">Digital Transformation</a>
+                 <a href="#">Web Devolopment</a>
+                 <a href="#">E-Commerce Devolopment</a>
+            </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropbtn">Career</button>
+            <div class="dropdown-content">
+                <a href="#">Internship</a>
+            </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+                <a href="#">Digital resources</a>
+                 <a href="#">Gallery</a>
+            </div>
+            </div>
+            <button type="button" class="contact-us">Contact Us</button>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="container">
+      <div class="image">
+        <img src="img1.jpg">
+      </div>
+      <div class="text">
+        <h2>Software Solutions and Services</h2>
+        <h1>Software Development <br> Service Provider</h1><br>
+        <p>With deep roots in technology, GyanMatrix is an India-based software development and service provider for digital technology and IT infrastructure with clients in the USA and Europe and is ready to serve any part of the world!</p>
+        <br>
+        <p>We are experts in:</p>
+        <ul>
+            <li><a href="">FullStack & Data Engineering</a></li><br>
+            <li><a href="">Salesforce Development</a></li><br>
+            <li><a href="">Web & Mobile Application Development</a></li><br>
+            <li><a href="">Affordable Team Extensions</a></li><br>
+            <li><a href="">Build, Operate, and Transfer Teams</a></li><br>
+        </ul>
+        <button type="button" class="contact-us">Let's Connect</button>
+      </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="text">
+        <h1>Custom Software Development Company In India</h1><br>
+        <p>At GyanMatrix, we offer specialised software development services in India that enable companies to succeed in the current digital environment. We are your ideal partner for delivering cutting-edge solutions because of our team of highly skilled professionals who are experts in a variety of software development fields.</p>
+        <br>
+        <p>We can help with custom application development, front-end and back-end development, API development, web development, software development, and mobile app development.</p>
+        </div>
+        <div class="image">
+        <img src="img2.jpg">
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+        <img src="img3.jpg">
+        </div>
+        <div class="text">
+        <h1>Custom Software Development Service Provider</h1><br>
+        <p>As a well-known provider of software development services, we are aware of the significance of maintaining an edge over competitors. Our commitment work has established us as a reputable provider of app development services, catering to companies of all sizes.</p>
+        <br>
+        <ul>
+            <li><a href="">Custom Software Devolopment Solutions</a></li><br>
+            <li><a href="">Custom Application Devolopment</a></li><br>
+            <li><a href="">Front-End and Back-End devolopment</a></li><br>
+            <li><a href="">API Devolopment</a></li><br>
+            <li><a href="">Mobile App Devolopment</a></li><br>
+            <li><a href="">Web Devolopment</a></li><br>
+            <li><a href="">Software Designs</a></li><br>
+        </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text">
+            <h2>Partnership vs Vendorship</h2>
+        <h1>Your True <br> Business Partner</h1><br>
+        <p>At GyanMatrix, quality is the gold standard for measuring client satisfaction. We are aware that while not every customer needs the same solution, they all need services of unmatched quality.</p>
+        <br>
+        <p>GyanMatrix is dedicated to providing quality in all of our services and in all that we accomplish with our people, process, and platforms and being your true business partner in every aspect.</p>
+        <button type="button" class="contact-us">Get In Touch</button>
+        </div>
+        <div class="image">
+        <img src="img4.jpg">
+        </div>
+    </div>
+    <div class="container">
+        <div class="image">
+        <img src="img5.jpg">
+        </div>
+        <div class="text">
+            <h2>Extend Your Team</h2>
+        <h1>Hire full-time, outsourced teams <br> easy, and quick</h1><br>
+        <p>Hire Remote Resources with No Time Zone Difference. We make your work with your virtual employee as easy as being in the same office. Each team member is an expert in their field and delivers excellent solutions while maintaining accountability. You can depend on our engineering teams to put in their best effort at every stage of the software development cycle.</p>
+        <br>
+        <p>We specialize in hiring full-time teams as well as staff augmentation. As we partner, you will get instant access to A++ FullStack engineers in your time zone. The tech talent you need is ready to join as an extension of your team.</p>
+        <button type="button" class="contact-us">Know More</button>
+        </div>
+    </div>
+
+    <h1 class="myH2">Our Leadership Team</h1>
+    <h2>Each member of our team is a specialist in his or her field. Together, we make sure you’re investing where <br> the best returns are while building loyalty across every touchpoint.</h2> <br>
+    <div class="container1">
+        <div class="image">
+            <img src="leader1.jpg" alt="">
+            <h3>Sam Neff</h3>
+            <h4>Board of Director</h4>
+            <br>
+            <img src="leader2.jpg" alt="">
+            <h3>Vasanth Govind</h3>
+            <h4>Co-Founder & Director of Products</h4>
+        </div> 
+        <div class="image">
+            <img src="leader3.jpg" alt="">
+            <h3>Rajan Parasuraman</h3>
+            <h4>Co-Founder & CEO</h4>
+            <br>
+            <img src="leader4.jpg" alt="">
+            <h3>Jasintha Anantharaman</h3>
+            <h4>Head – Business Development</h4>
+        </div> 
+        <div class="image">
+            <img src="leader5.jpg" alt="">
+            <h3>Vinoth Vanaraj</h3>
+            <h4>Co-Founder & Director Finance</h4>
+            <br>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="text">
+        <h1>We Bring You Powerful Benefits To Help You Navigate Your Digital Products.</h1><br>
+        <p>We have 20+ years of experience in providing state-of-the-art software solutions to different domains, varying from education, media, finance, and e-commerce, to name a few, to help them deliver world-class solutions with confidence to their customers.</p>
+        <br>
+        <button type="button" class="contact-us">Let's Talk</button>
+        </div>
+        <div class="image1">
+        <img src="img6.jpg">
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="text">
+        <h1>We Build Relationships</h1><br>
+        <p>Total transparency, uncompromised quality, and a people-first approach have helped GyanMatrix become the first choice of our partners.</p>
+        <br>
+        <h1>Optimised Processes</h1><br>
+        <p>Our standardized way of working with more than 100+ highly qualified engineers has helped us to be more efficient with respect to every penny spent.</p>
+        </div>
+        <div class="text">
+        <h1>Expert Technical Talents</h1><br>
+        <p>With over 100+ top software engineers and tech consultants available with us, with advanced technical knowledge and industry experience.</p>
+        <br>
+        <h1>20+ Years of Experience</h1><br>
+        <p>We have a proven track record of providing software solutions to Social Media, E-Commerce, Education Giants, Media Giants, and various other domains that range from Fortune 500 to the most successful startups.</p>
+        <br>
+        <h1>Affordable Yet Premium</h1><br>
+        <p>We are well known for our uncompromised premium service with a 100% customer satisfaction rate at a very competitive and affordable cost.</p>
+    </div>
+    </div>
+
+
+</body>
+</html>
