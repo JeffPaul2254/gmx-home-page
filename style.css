@@ -516,3 +516,13 @@ h4 {
     .w3-badge.active {
       background-color: khaki;
     }
+
+    .get-in-touch1{
+  background: fixed;
+  background-color: white;
+  padding: 17px 40px;
+  align-self: auto;
+  color: black;
+  border: none;
+  cursor: pointer;
+}

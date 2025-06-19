@@ -24,6 +24,7 @@
     slides[slideIndex - 1].style.display = "block";  
     dots[slideIndex - 1].classList.add("active");
   }
+  setInterval(() => {plusDivs(1);}, 5000);
 
  const slides = document.querySelectorAll('.orbit-slide');
     const dots = document.querySelectorAll('.dot');
